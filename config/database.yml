@@ -1,0 +1,17 @@
+default: &default
+  adapter: postgresql
+  pool: 5
+  host: localhost
+  timeout: 5000
+
+development:
+  <<: *default
+  database: u_monitor_development
+  username: 'dmitry'
+  password: 199016
+
+test:
+  <<: *default
+  database: u_monitor_test
+  username: 'dmitry'
+  password: 199016
